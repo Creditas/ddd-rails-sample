@@ -8,12 +8,12 @@ default: &default
 
 development:
   <<: *default
-  database: rails_repository_development
+  database: ddd_rails_example_development
 
 test:
   <<: *default
-  database: rails_repository_test
+  database: ddd_rails_example_test
 
 production:
   <<: *default
-  database: rails_repository_production
+  database: ddd_rails_example_production
