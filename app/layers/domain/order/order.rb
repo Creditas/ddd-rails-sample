@@ -6,7 +6,7 @@ module Domain
       attribute :customer, :string # could be an entity
 
       def add_product(product, quantity)
-        raise 'Product already exists' if product_already_exists?(product)
+        raise BusinessException.new('Product already exists') if product_already_exists?(product)
 
         items << Item.new(quantity: quantity, product: product)
       end
@@ -30,7 +30,7 @@ module Domain
       end
 
       def validate_product_presence!(product)
-        raise 'Product not found on item list' unless items.find { |item| item.product == product }.present?
+        raise BusinessException.new('Product not found on item list') unless items.find { |item| item.product == product }.present?
       end
     end
   end
