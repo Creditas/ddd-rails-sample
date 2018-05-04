@@ -7,7 +7,7 @@ module Application
       end
 
       def create_order(create_order_command)
-        order = Domain::Order.new(create_order_command.customer)
+        order = Domain::Order::Order.new(create_order_command.customer)
 
         ActiveRecord::Base.transaction do
           @order_repository.save(order)
