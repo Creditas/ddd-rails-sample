@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  scope module: 'web' do
+    scope module: 'controllers' do
+      resources :orders, only: [:index]
+    end
+  end
 end
