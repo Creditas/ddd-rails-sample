@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2018_04_17_211238) do
   create_table "orders", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "customer"
   end
 
   create_table "products", force: :cascade do |t|
