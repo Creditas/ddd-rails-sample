@@ -20,11 +20,11 @@ module Domain
       private
 
       def validate_quantity!
-        raise 'must be greater than zero'  unless self.quantity.present? && self.quantity > 0
+        raise BusinessException.new('Product must be greater than zero')  unless self.quantity.present? && self.quantity > 0
       end
 
       def validate_product_presence!
-        raise 'must be informed'  unless self.product.present?
+        raise BusinessException.new('Product must be informed')  unless self.product.present?
       end
     end
   end
