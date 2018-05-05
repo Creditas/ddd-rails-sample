@@ -3,7 +3,7 @@ module Domain
     class Order < Infra::Models::ApplicationRecord
       has_many :items, autosave: true
 
-      attribute :customer, :string # could be an entity
+      attribute :customer, :string # just a string because we are lazy
 
       def add_product(product, quantity)
         raise Exceptions::BusinessException.new('Product already exists') if product_already_exists?(product)
