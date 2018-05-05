@@ -1,7 +1,7 @@
 module Application
   module Order
     class OrderApplication
-      def initialize(repositories = {}, query_objects = {})
+      def initialize(repositories = {})
         @order_repository = repositories.fetch(:order) { Infra::Repositories::OrderRepository.new }
         @product_repository = repositories.fetch(:product) { Infra::Repositories::ProductRepository.new }
       end
