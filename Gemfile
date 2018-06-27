@@ -20,6 +20,7 @@ end
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'pry', '~> 0.11.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '~> 2.0', '>= 2.0.2'
   gem 'spring-watcher-listen', '~> 2.0.0'
