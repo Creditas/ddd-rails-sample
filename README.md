@@ -1,6 +1,8 @@
 # What is this project?
 
-**DDD Rails Sample** is a open-source project meant to be used as a start point for those who want to build Domain Driven Design applications in Ruby. As Rails is the most robust web framework in Ruby community we tried to use it in a way we could modularize the layers and decouple responsabilities. This project is the result of this efforts.
+**DDD Rails Sample** is a open-source project meant to be used as a start point, or an inspiration, for those who want to build Domain Driven Design applications in Ruby. As Rails is the most robust web framework in Ruby community we tried to use it in a way we could modularize the layers and decouple responsabilities. This project is the result of this efforts.
+
+**NOTE:** This is NOT intended to be a definitive solution or a production ready project
 
 # Technologies/frameworks involved
 
